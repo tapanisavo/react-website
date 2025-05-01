@@ -7,4 +7,5 @@ jobs:
   add-reviews:
     runs-on: ubuntu-latest
     steps:
-      -uses: kentaro-m/auto-assign-action@v2.0.0
+      -name: Assign the pull request to its author 
+       uses: kentaro-m/auto-assign-action@v2.0.0
