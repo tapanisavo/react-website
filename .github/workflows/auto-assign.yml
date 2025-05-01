@@ -1,11 +1,15 @@
 name: 'Auto assign pull request'
+
 on:
   pull_request:
-    types: [opened, ready_for_review, unassigned]
+    types: 
+      - opened
+      - ready_for_review
+      - unassigned
 
 jobs:
   add-reviews:
     runs-on: ubuntu-latest
     steps:
-      -name: Assign the pull request to its author 
-       uses: kentaro-m/auto-assign-action@v2.0.0
+      - name: Assign the pull request to its author 
+        uses: kentaro-m/auto-assign-action@v2.0.0
