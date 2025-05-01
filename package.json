@@ -1,0 +1,31 @@
+{
+  "name": "react-website-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc -b src/server",
+    "start": "npm run build && node build/server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tapanisavo/react-website.git"
+  },
+  "keywords": [
+    "react",
+    "nodejs"
+  ],
+  "author": "Tapani Savo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tapanisavo/react-website/issues"
+  },
+  "homepage": "https://github.com/tapanisavo/react-website#readme",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
