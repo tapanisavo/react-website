@@ -1,0 +1,21 @@
+name: Merge master to development
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  sync-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Merge master to development
+        uses: devmasx/merge-branch@v1
+        with:
+          type: now
+          from_branch: master
+          target_branch: development
+          message: Merge master to development
+          github_token: ${{ secrets.GITHUB_TOKEN }}
