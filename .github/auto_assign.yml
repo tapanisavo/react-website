@@ -1,0 +1,13 @@
+# Set to true to add reviewers to pull requests
+addReviewers: false
+
+# Assign the pull request to its author
+addAssignees: author
+
+# A list of reviewers to be added to pull requests (GitHub user name)
+reviewers:
+  - tapanisavo
+
+# A number of reviewers added to the pull request
+# Set 0 to add all the reviewers (default: 0)
+numberOfReviewers: 0

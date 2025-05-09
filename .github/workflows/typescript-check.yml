@@ -1,0 +1,25 @@
+name: TypeScript check
+
+on:
+  pull_request:
+    state: open
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '24'
+
+    - name: Install dependencies
+      run: npm i
+
+    - name: Build the application
+      run: npm run build
+
+    - name: TypeScript check
+      run: npm run tsc
