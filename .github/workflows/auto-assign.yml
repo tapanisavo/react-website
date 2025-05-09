@@ -2,10 +2,7 @@ name: 'Auto assign pull request'
 
 on:
   pull_request:
-    types: 
-      - opened
-      - ready_for_review
-      - unassigned
+    state: open
 
 permissions:
   pull-requests: write
